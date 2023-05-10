@@ -24,16 +24,18 @@ class App {
     this.renderer = new Renderer(this.render, document.body, 1000 / 60, {
       circles,
       counter: SWAP_FRAMES_COUNT,
+      backgroundColor: [0, 0, 0, 0.4],
     });
   }
 
   render() {
     const { canvas, context } = this;
-    const { circles } = this.props;
+    const { circles, backgroundColor: [br, bg, bb, ba] } = this.props;
 
-    context.clearRect(0, 0, canvas.width, canvas.height);
+    context.fillStyle = `rgba(${br}, ${bg}, ${bb}, ${ba})`;
+    context.fillRect(0, 0, canvas.width, canvas.height);
 
-    context.lineWidth = 15;
+    context.lineWidth = 5;
     circles.forEach((_, i) => {
       const nextI = i + 1 === circles.length ? 0 : i + 1;
       const { x, y, r, g, b } = circles[i].current;
@@ -74,7 +76,7 @@ class App {
           r: Math.random() * 255,
           g: Math.random() * 255,
           b: Math.random() * 255,
-          radius: 50 + Math.random() * 300,
+          radius: 25 + Math.random() * 150,
         };
       });
     }
