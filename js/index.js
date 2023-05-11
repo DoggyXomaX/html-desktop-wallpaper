@@ -28,7 +28,7 @@ const randomizeXmaxTarget = (xmax) => {
 };
 
 for (let i = 0; i < COUNT; i++) {
-  const randomPath = BASE_PATH.join(IMAGES_COUNT * Math.random() >> 0);
+  const randomPath = BASE_PATH.join(i % IMAGES_COUNT);
   const xmax = document.createElement('xmax');
   xmax.style.backgroundImage = `url(${randomPath})`;
   xmax.a = 0;
