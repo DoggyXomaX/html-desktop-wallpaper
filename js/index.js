@@ -3,7 +3,7 @@ const options = {
   MAX_S: 3,
   MIN_I: 0.5,
   MAX_I: 3,
-  FPS: 10,
+  FPS: 4,
   COUNT: 10,
 };
 
