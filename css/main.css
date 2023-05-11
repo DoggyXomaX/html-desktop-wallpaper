@@ -24,6 +24,7 @@ xmax {
   top: 0;
   width: 128px;
   height: 128px;
+  transition: transform 0.5s, z-index 0.5s;
 }
 
 viewport {
