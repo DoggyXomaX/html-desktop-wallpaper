@@ -14,26 +14,21 @@ html, body {
 body {
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 
-.doge {
+xmax {
+  display: block;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  animation: doge-rotation 2s infinite linear;
-
-  width: 200px;
-  height: 200px;
-  background-size: 200px;
-  background-image: url(https://vk.com/images/pics/doge.png);
+  left: 0;
+  top: 0;
+  width: 128px;
+  height: 128px;
 }
 
-@keyframes doge-rotation {
-  0% {
-    transform: translate(-50%, -50%) rotate(0turn);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotate(1turn);
-  }
+viewport {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background.jpg);
 }
