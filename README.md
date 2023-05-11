@@ -1,2 +1,2 @@
-# Xmax desktop
-![Xmax preview](./.github/assets/preview.png "Xmax preview")
+# Xmax wallpaper
+![Xmax wallpaper](./.github/assets/preview.png "Xmax wallpaper")
