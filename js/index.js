@@ -3,8 +3,8 @@ const options = {
   MAX_S: 3,
   MIN_I: 0.5,
   MAX_I: 3,
-  FPS: 4,
-  COUNT: 10,
+  FPS: 10,
+  COUNT: 25,
 };
 
 const INTERVAL = 1000 / options.FPS;
