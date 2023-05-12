@@ -16,3 +16,11 @@ body {
   color: white;
   overflow: hidden;
 }
+
+div {
+  color: green;
+}
+
+p {
+  color: red;
+}
