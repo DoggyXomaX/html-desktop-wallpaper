@@ -16,21 +16,3 @@ body {
   color: white;
   overflow: hidden;
 }
-
-xmax {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 128px;
-  height: 128px;
-  transition: transform 0.5s, z-index 0.5s;
-}
-
-viewport {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/background.jpg);
-	background-size: 100%;
-}
